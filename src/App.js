@@ -53,7 +53,7 @@ function App() {
             if (tmpNoteText !== currNote.body) {
                 updateNote(tmpNoteText);
             }
-        }, 500)
+        }, 1000)
         return () => clearTimeout(timeoutId);
     }, [tmpNoteText])
 
