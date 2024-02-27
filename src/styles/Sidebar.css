@@ -1,0 +1,100 @@
+.sidebar--header {
+    width: 100%;
+    float: left;
+    border: solid 1px black;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sidebar--btn {
+    width: 25px;
+    height: 25px;
+    background-color: var(--blue);
+    font-size: 18px;
+    color: whitesmoke;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.sidebar--note {
+    width: 100%;
+    border: 1px black solid;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sidebar--note:hover {
+    cursor: pointer;
+}
+
+
+.sidebar--note--chosen {
+    background-color: var(--blue);
+    color: whitesmoke;
+}
+
+.sidebar--note--h4 {
+    display: block;
+    margin-left: 10px;
+}
+
+.sidebar--note--btn {
+    display: none;
+    background: transparent;
+    border: 0px;
+    cursor: pointer;
+}
+
+.sidebar--note:hover > .sidebar--note--btn {
+    display: block;
+}
+
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*
+    Delete Button
+ */
+.gg-trash {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    /*transform: scale(var(--ggs,1));*/
+    width: 10px;
+    height: 12px;
+    border: 2px solid transparent;
+    box-shadow:
+            0 0 0 2px,
+            inset -2px 0 0,
+            inset 2px 0 0;
+    border-bottom-left-radius: 1px;
+    border-bottom-right-radius: 1px;
+    margin-top: 4px
+}
+
+.gg-trash::after,
+.gg-trash::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute
+}
+
+.gg-trash::after {
+    background: currentColor;
+    border-radius: 3px;
+    width: 16px;
+    height: 2px;
+    top: -4px;
+    left: -5px
+}
+
+.gg-trash:hover {
+    display: block;
+}

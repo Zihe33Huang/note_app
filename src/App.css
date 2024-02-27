@@ -1,0 +1,32 @@
+:root {
+  --blue: #F49D37;
+  --background: #3F88C5;
+}
+
+html, body, #root, .App{
+  height: 100%;
+}
+
+
+.split {
+  display: flex;
+}
+
+
+.no-notes {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.first-note {
+  margin: 0 auto;
+  display: block;
+  border-radius: 5px;
+  color: whitesmoke;
+  background-color: var(--blue);
+  width: 150px;
+  height: 150px;
+}
